@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#contentCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameBlock {
+    display: flex;
+    width: 800px;
+    height: 600px;
+}
+  
+#gameContainer {
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid #000;
+}
+
+#gameInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#scoreBlock {
+    display: flex;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+#timerBlock {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+#startButton {
+    width: fit-content;
+}
+
+.displayNone {
+    display: none;
+}
+
+form.submitForm {
+    display: inline;
+    padding-bottom: 2em;
+}
+
+.question {
+    display: block;
+    padding: 1em;
+}
