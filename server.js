@@ -7,7 +7,6 @@ const router = require('./routes/router.js');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
-let questions = [];
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: false }));
