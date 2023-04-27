@@ -1,6 +1,6 @@
 # Space Trivia Game
 
-Crudely made game using pure JavaScript. For IDSP-2.
+Crudely made game using JavaScript. For IDSP-2.
 
 ## How to Run
 
