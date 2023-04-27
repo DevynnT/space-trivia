@@ -6,7 +6,7 @@ let chosenQuestions = [];
 const getNewQuestions = (amount = 5) => {
     const questions = [];
     const questionClone = structuredClone(allQuestions).questions;
-    
+
     for (let i = 0; i < amount; i++) {
         const chosenIndex = util.getRandomInt(questionClone.length - 1);
         const questionObject = questionClone[chosenIndex];

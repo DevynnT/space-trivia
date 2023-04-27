@@ -39,7 +39,7 @@ const endGame = async () => {
 const countdown = () => {
     let remainingTime = 60;
     timerElement.textContent = "1:00";
-  
+
     const timerInterval = setInterval(() => {
         if (gameOver) {
             clearInterval(timerInterval);
@@ -52,15 +52,15 @@ const countdown = () => {
         const seconds = remainingTime % 60;
 
         timerElement.textContent = `${minutes}:${seconds
-        .toString()
-        .padStart(2, "0")}`;
+            .toString()
+            .padStart(2, "0")}`;
 
         if (remainingTime <= 0) {
-        if (!gameOver) {
-            gameOver = true;
-            endGame();
-        }
-        clearInterval(timerInterval);
+            if (!gameOver) {
+                gameOver = true;
+                endGame();
+            }
+            clearInterval(timerInterval);
         }
     }, 1000);
 };
@@ -100,7 +100,7 @@ const submitAnswer = async (question, answer) => {
             },
             body: JSON.stringify({ question, answer })
         });
-        
+
         if (response.ok) {
             return await response.json();
         }
@@ -137,7 +137,7 @@ const formEventListener = async (event) => {
 
         console.log(isCorrect);
         questionIndex++;
-        
+
         if (questionIndex < questionAmount) {
             nextQuestion(form, questionIndex);
             drawResult(isCorrect);
