@@ -20,4 +20,4 @@ npm install
 npm start
 ```
 
-Runs on `localhost:8000` by default. Create a .env file with `PORT` to chnage the port.
+Runs on `localhost:8000` by default. Create a .env file with `PORT` to change the port.
